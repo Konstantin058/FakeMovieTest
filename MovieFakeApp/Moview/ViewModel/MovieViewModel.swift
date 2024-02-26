@@ -19,11 +19,11 @@ class MovieViewModel {
     private let manager = ApiService()
     
     func fetchMovie() {
-        manager.request(url: Constants.movieURL, expecting: [Movie].self) { result in
+        manager.request(url: Constants.movieURL, expecting: [Movie].self) { [weak self] result in
             switch result {
             case .success(let newMovie):
                 DispatchQueue.main.async {
-                    self.movies = newMovie
+                    self?.movies = newMovie
                 }
             case .failure(let error):
                 print("Error viewModel: \(error)")
