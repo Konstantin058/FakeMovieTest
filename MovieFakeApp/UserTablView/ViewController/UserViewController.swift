@@ -92,7 +92,7 @@ extension UserViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.identifier, for: indexPath) as? UserTableViewCell else {
             return UITableViewCell() }
         
-        let userContent = userViewModel.users[indexPath.row]
+        let userContent = userViewModel.users.safeObject(at: indexPath.row)
         cell.user = userContent
         
         return cell

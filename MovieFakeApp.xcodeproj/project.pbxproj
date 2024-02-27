@@ -20,7 +20,7 @@
 		B59F47022B8509A300C050CA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F47012B8509A300C050CA /* Constant.swift */; };
 		B59F47042B850B9200C050CA /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F47032B850B9200C050CA /* TabbarViewController.swift */; };
 		B59F47072B85F4DD00C050CA /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F47062B85F4DD00C050CA /* Protocols.swift */; };
-		B59F47092B85F5C700C050CA /* Extensiom+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F47082B85F5C700C050CA /* Extensiom+UIImage.swift */; };
+		B59F47092B85F5C700C050CA /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F47082B85F5C700C050CA /* Extension+UIImage.swift */; };
 		B59F470C2B85F91200C050CA /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F470B2B85F91200C050CA /* UserViewController.swift */; };
 		B59F470E2B85FC2F00C050CA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F470D2B85FC2E00C050CA /* DetailViewController.swift */; };
 		B59F47102B85FE1A00C050CA /* MovieDetalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F470F2B85FE1A00C050CA /* MovieDetalTableViewCell.swift */; };
@@ -30,6 +30,7 @@
 		B59F47372B88B83600C050CA /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F47362B88B83600C050CA /* ColorsViewController.swift */; };
 		B59F47392B88B86300C050CA /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F47382B88B86300C050CA /* ColorCollectionViewCell.swift */; };
 		B59F473B2B88B87800C050CA /* LoadingReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F473A2B88B87800C050CA /* LoadingReusableView.swift */; };
+		B5B8F0212B8DB30D00D3B558 /* Exstension+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8F0202B8DB30D00D3B558 /* Exstension+Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +49,7 @@
 		B59F47012B8509A300C050CA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B59F47032B850B9200C050CA /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		B59F47062B85F4DD00C050CA /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		B59F47082B85F5C700C050CA /* Extensiom+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensiom+UIImage.swift"; sourceTree = "<group>"; };
+		B59F47082B85F5C700C050CA /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		B59F470B2B85F91200C050CA /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		B59F470D2B85FC2E00C050CA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B59F470F2B85FE1A00C050CA /* MovieDetalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetalTableViewCell.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		B59F47362B88B83600C050CA /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		B59F47382B88B86300C050CA /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		B59F473A2B88B87800C050CA /* LoadingReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingReusableView.swift; sourceTree = "<group>"; };
+		B5B8F0202B8DB30D00D3B558 /* Exstension+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exstension+Collection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B59F47332B88B7F800C050CA /* InfinityScrolls */,
-				B59F47322B88B79B00C050CA /* Moview */,
+				B59F47322B88B79B00C050CA /* Movie */,
 				B59F46F02B8508C300C050CA /* ApiManager */,
 				B59F46F12B8508CD00C050CA /* Constant */,
 				B59F46F22B8508E300C050CA /* Exstesion */,
@@ -152,7 +154,8 @@
 		B59F46F22B8508E300C050CA /* Exstesion */ = {
 			isa = PBXGroup;
 			children = (
-				B59F47082B85F5C700C050CA /* Extensiom+UIImage.swift */,
+				B59F47082B85F5C700C050CA /* Extension+UIImage.swift */,
+				B5B8F0202B8DB30D00D3B558 /* Exstension+Collection.swift */,
 			);
 			path = Exstesion;
 			sourceTree = "<group>";
@@ -241,7 +244,7 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		B59F47322B88B79B00C050CA /* Moview */ = {
+		B59F47322B88B79B00C050CA /* Movie */ = {
 			isa = PBXGroup;
 			children = (
 				B59F46ED2B85089A00C050CA /* Model */,
@@ -249,7 +252,7 @@
 				B59F46F32B85090000C050CA /* View */,
 				B59F46EE2B8508A300C050CA /* ViewModel */,
 			);
-			path = Moview;
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		B59F47332B88B7F800C050CA /* InfinityScrolls */ = {
@@ -353,10 +356,11 @@
 				B59F47022B8509A300C050CA /* Constant.swift in Sources */,
 				B59F47102B85FE1A00C050CA /* MovieDetalTableViewCell.swift in Sources */,
 				B59F47162B86084600C050CA /* User.swift in Sources */,
+				B5B8F0212B8DB30D00D3B558 /* Exstension+Collection.swift in Sources */,
 				B59F47072B85F4DD00C050CA /* Protocols.swift in Sources */,
 				B59F46F82B85095800C050CA /* MovieCollectionViewCell.swift in Sources */,
 				B59F46D92B85085D00C050CA /* SceneDelegate.swift in Sources */,
-				B59F47092B85F5C700C050CA /* Extensiom+UIImage.swift in Sources */,
+				B59F47092B85F5C700C050CA /* Extension+UIImage.swift in Sources */,
 				B59F470C2B85F91200C050CA /* UserViewController.swift in Sources */,
 				B59F47392B88B86300C050CA /* ColorCollectionViewCell.swift in Sources */,
 				B59F471A2B8608EB00C050CA /* UserTableViewCell.swift in Sources */,

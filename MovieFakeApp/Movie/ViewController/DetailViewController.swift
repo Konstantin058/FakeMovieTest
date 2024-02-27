@@ -80,7 +80,7 @@ extension MovieDetailViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MovieDetalTableViewCell.identifier, for: indexPath) as? MovieDetalTableViewCell else { return UITableViewCell() }
         
-        let movieDetailContent = detailViewModel.movies[indexPath.row]
+        let movieDetailContent = detailViewModel.movies.safeObject(at: indexPath.row)
         cell.moviesDetail = movieDetailContent
         
         return cell

@@ -111,7 +111,7 @@ extension ColorsViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PageCollectionViewCell.identifier, for: indexPath) as? PageCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.colImage.backgroundColor = imageColors[indexPath.row]
+        cell.colImage.backgroundColor = imageColors.safeObject(at: indexPath.row)
         
         return cell
     }

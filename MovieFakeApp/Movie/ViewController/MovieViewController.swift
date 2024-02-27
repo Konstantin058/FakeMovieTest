@@ -88,7 +88,7 @@ extension MovieViewController: UICollectionViewDelegate, UICollectionViewDataSou
             return UICollectionViewCell()
         }
         
-        let movieContent = movieViewModel.movies[indexPath.row]
+        let movieContent = movieViewModel.movies.safeObject(at: indexPath.row)
         cell.movieImages = movieContent
         
         return cell
