@@ -5,8 +5,6 @@
 //  Created by Константин Евсюков on 23.02.2024.
 //
 
-import Foundation
-
 import UIKit
 
 class PageCollectionViewCell: UICollectionViewCell {

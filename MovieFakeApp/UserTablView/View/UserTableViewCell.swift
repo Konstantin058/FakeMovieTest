@@ -5,7 +5,6 @@
 //  Created by Константин Евсюков on 21.02.2024.
 //
 
-import Foundation
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
